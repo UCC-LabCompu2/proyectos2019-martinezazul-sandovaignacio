@@ -1,11 +1,47 @@
-aside{
-    background-color: mediumspringgreen;
-    ;
+@font-face {
+    src: url("../fonts/Pixel-UniCode.ttf");
+    font-family: Unicode;
 }
+header {
+    font-family: Unicode;
+    text-align: center;
+    color: #f8c406;
+    text-shadow: 3px 2px black;
+    text-decoration-line: underline;
+    font-size: 1.5em;
+}
+aside{
+    background-color: rgba(225, 225, 225, 0.8);
+    border-style: solid;
+    border-color: #888888;
+    border-width: thin;
+    border-left-width: thick;
+    border-radius: 5px;
+    float:left;
+    margin: 0 1em 1em 0;
+    width: 18%;
+    padding: 1em;
+    font-size: 0.9em;
+}
+
 body {
     background-image: url("../img/empty.jpg");
     background-size: contain;
     background-repeat: repeat-x;
-    background-color: deepskyblue;
+    background-color: #7fac71;
     background-attachment: fixed;
+    font-family: Unicode;
+    font-size: 1.5em;
 }
+ol.demo {
+    list-style-type: decimal;
+    margin: 7%;
+    padding: 2%;
+    list-style-position: inside;
+}
+h2{
+    text-shadow: 3px -1px antiquewhite;
+    color:black;
+    text-decoration-line: underline;
+}
+
