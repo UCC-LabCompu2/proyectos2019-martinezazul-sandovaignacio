@@ -4,21 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador.</title>
-    <link rel="icon" href="img/Reglamento_icon.png">
+    <link rel="icon" href="img/Zahori_icon.png">
     <link rel="stylesheet" href="css/style.css">
-    <!--<style>
-        ol.demo {
-            list-style-type: decimal;
-            margin: 7%;
-            padding: 2%;
-            list-style-position: inside;
-        }
-    </style>-->
 </head>
 <header>
     <h1>SIMULADOR.</h1>
 </header>
-<aside>
+<aside class="popup">
     <h3>
         Índice
     </h3>
@@ -50,10 +42,38 @@
         </li>
     </ol>
 </aside>
+<canvas id="myCanvas" class="popup">
+</canvas>
 <body>
+<h3>Elija el tipo de ecuación:</h3>
+<form>
+    <p>    <input type="radio" name="ecuación" value="Primer Grado" checked> Primer Grado.
+    </p>
+    <p>    <input type="radio" name="ecuación" value="Segundo Grado"> Segundo Grado.
+    </p>
+    <p>    <input type="radio" name="ecuación" value="Tercer Grado"> Tercer Grado.
+    </p>
+</form>
+<form>
+    <p> a=   <input type="number" name="a">
+    </p>
+    <p> b=    <input type="number" name="b">
+    </p>
+    <p> c=   <input type="number" name="c">
+    </p>
+    <p> d=    <input type="number" name="d">
+    </p>
+    <input type="submit">
+</form>
+<h3>Solución:</h3>
+<p>X=<output name="x" for="a b c d"></output></p>
+<p>Y=<output name="y" for="a b c d"></output></p>
+<p>Z=<output name="z" for="a b c d"></output></p>
+
 
 </body>
-<footer>
+
+<footer class="popup">
     <a href="https://www.uccor.edu.ar/home/">
         <img class="ucc" src="img/UCC.png" alt="Universidad Católica de Córdoba"  >
     </a>

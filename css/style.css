@@ -5,25 +5,27 @@
 header {
     font-family: Unicode;
     text-align: center;
-    color: #f8c406;
+    color: #f87057;
     text-shadow: 3px 2px black;
     text-decoration-line: underline;
     font-size: 1.5em;
 }
 aside{
-    background-color: rgba(225, 225, 225, 0.8);
-    border-style: solid;
-    border-color: #888888;
-    border-width: thin;
-    border-left-width: thick;
-    border-radius: 5px;
     float:left;
     margin: 0 1em 1em 0;
     width: 18%;
     padding: 0 0.25em 0 0.25em;
     font-size: 0.9em;
 }
+#myCanvas{
+    float: right;
+    margin: 0.5em;
+    width: 28em;
+    height: 17em;
+    position: relative;
+    right: 0;
 
+}
 body {
     background-image: url("../img/empty.jpg");
     background-size: contain;
@@ -49,12 +51,6 @@ img.ucc{
     height:4em; float: right; margin: 0.5em 0.5em 0.5em 0;
 }
 footer{
-    background-color: rgba(225, 225, 225, 0.8);
-    border-style: solid;
-    border-color: #888888;
-    border-width: thin;
-    border-left-width: thick;
-    border-radius: 5px;
     position:fixed;
     bottom: 0;
     left:0;
@@ -67,4 +63,17 @@ footer{
     width: 60%;
     height: 4em;
     margin: 0.5em 0.5em 0.5em 0;
+}
+
+.popup{
+    background-color: rgba(225, 225, 225, 0.75);
+    border-style: solid;
+    border-color: #888888;
+    border-width: thin;
+    border-left-width: thick;
+    border-radius: 5px;
+}
+em{
+    background-color: rgba(254, 254, 104, 0.7);
+    padding: 0 0.3em 0 0.3em;
 }
