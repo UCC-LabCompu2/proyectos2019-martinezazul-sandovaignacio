@@ -6,6 +6,7 @@
     <title>Simulador.</title>
     <link rel="icon" href="img/Zahori_icon.png">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="functions.js" ></script>
 </head>
 <header>
     <h1>SIMULADOR.</h1>
@@ -31,48 +32,35 @@
             </ol>
         </li>
         <li><a href="simulador.html"> Simulador: </a>
-
-            <ol class="demo">
-                <li>Ecuación de Primer Grado
-                </li>
-                <li>Ecuación de Segundo Grado
-                </li>
-                <li>Ecuación de Tercer Grado
-                </li>
-            </ol>
         </li>
     </ol>
 </aside>
-<canvas id="myCanvas" class="popup">
-</canvas>
+
 <body>
-<h3>Elija el tipo de ecuación:</h3>
-<form>
-    <p>    <input type="radio" name="ecuación" value="Primer Grado" checked> Primer Grado.
-    </p>
-    <p>    <input type="radio" name="ecuación" value="Segundo Grado"> Segundo Grado.
-    </p>
-    <p>    <input type="radio" name="ecuación" value="Tercer Grado"> Tercer Grado.
-    </p>
-</form>
-<form>
-    <p> a=   <input type="number" name="a">
-    </p>
-    <p> b=    <input type="number" name="b">
-    </p>
-    <p> c=   <input type="number" name="c">
-    </p>
-    <p> d=    <input type="number" name="d">
-    </p>
-    <input type="submit">
-</form>
-<h3>Solución:</h3>
-<p>X=<output name="x" for="a b c d"></output></p>
-<p>Y=<output name="y" for="a b c d"></output></p>
-<p>Z=<output name="z" for="a b c d"></output></p>
 
-
+<div class = "popup">
+    <h3>
+        GRAFICAR UNA FUNCIÓN:
+    </h3>
+    <p>
+        Introducí los términos de la ecuación que quieras resolver así la magia de las computadoras la grafica.
+    </p>
+    <form>
+        <p>
+            Y =
+            <input type="number" name="a" id = "numa" min="-10" max="10"> X <sup>3</sup> +
+            <input type="number" name="b" id = "numb" min="-10" max="10"> X <sup>2</sup> +
+            <input type="number" name="c" id = "numc" min="-10" max="10"> X +
+            <input type="number" name="d" id = "numd" min="-10" max="10">
+        </p>
+    </form>
+    <button onclick="graficar()">
+        Graficar</button>
+    <p>EEEEEASY!!!</p>
+</div>
 </body>
+
+<canvas id ="myCanvas" class="popup" width = "420" height = "420"></canvas>
 
 <footer class="popup">
     <a href="https://www.uccor.edu.ar/home/">
