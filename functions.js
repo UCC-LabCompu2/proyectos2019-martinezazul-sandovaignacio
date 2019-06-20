@@ -49,7 +49,7 @@ for (i=0; i<p;i++){
         ctx.textBaseline = 'middle';
         if ((i-10)!=0){
             ctx.fillText(i-10, ( i / p)*canvas.width, canvas.height/2+10);
-            ctx.fillText(i-10, canvas.width/2-10, ( i / p)*canvas.height);
+            ctx.fillText((i-10)*-1, canvas.width/2+10, ( i / p)*canvas.height);
         }
     }
 
